@@ -261,8 +261,8 @@ function QBCore.Functions.CanUseItem(item)
 end
 
 function QBCore.Functions.UseItem(source, item)
-    if GetResourceState('qb-inventory') == 'missing' then return end
-    exports['qb-inventory']:UseItem(source, item)
+    if GetResourceState('qs-inventory') == 'missing' then return end
+    exports['qs-inventory']:UseItem(source, item)
 end
 
 -- Kick Player
@@ -407,8 +407,8 @@ end
 -- Utility functions
 
 function QBCore.Functions.HasItem(source, items, amount)
-    if GetResourceState('qb-inventory') == 'missing' then return end
-    return exports['qb-inventory']:HasItem(source, items, amount)
+    if GetResourceState('qs-inventory') == 'missing' then return end
+    return exports['qs-inventory']:HasItem(source, items, amount)
 end
 
 function QBCore.Functions.Notify(source, text, type, length)
